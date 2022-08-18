@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-halo ppqs
-=======
-halo 
->>>>>>> 80cf296f28268cd3915f55bb7907657820ec5f8b
+halo qoryatussalam
+
