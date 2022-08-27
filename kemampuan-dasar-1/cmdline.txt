@@ -4,16 +4,18 @@ C:\Users\khoir>dir
 
  Directory of C:\Users\khoir
 
-18/08/2022  12:51    <DIR>          .
+25/08/2022  11:10    <DIR>          .
 06/08/2022  06:43    <DIR>          ..
-18/08/2022  23:01             1.608 .bash_history
-18/08/2022  10:30                64 .gitconfig
+25/08/2022  11:10             7.810 .bash_history
+19/08/2022  12:29                64 .gitconfig
 16/08/2022  10:12    <DIR>          .idlerc
+22/08/2022  08:28    <DIR>          .vscode
 06/08/2022  06:26    <DIR>          Contacts
-05/08/2022  17:39    <DIR>          Desktop
-15/08/2022  19:05    <DIR>          Documents
-12/08/2022  14:11    <DIR>          Downloads
+22/08/2022  09:46    <DIR>          Desktop
+19/08/2022  11:13    <DIR>          Documents
+22/08/2022  09:58    <DIR>          Downloads
 06/08/2022  06:26    <DIR>          Favorites
+19/08/2022  11:12               121 Get-LastBootTime.ps1
 06/08/2022  06:26    <DIR>          Links
 06/08/2022  06:26    <DIR>          Music
 09/08/2022  13:47    <DIR>          OneDrive
@@ -21,8 +23,8 @@ C:\Users\khoir>dir
 06/08/2022  06:26    <DIR>          Saved Games
 06/08/2022  06:43    <DIR>          Searches
 06/08/2022  07:02    <DIR>          Videos
-               2 File(s)          1.672 bytes
-              15 Dir(s)  77.657.964.544 bytes free
+               3 File(s)          7.995 bytes
+              16 Dir(s)  76.877.443.072 bytes free
 
 C:\Users\khoir>arp
 
@@ -779,6 +781,7 @@ C:\Users\khoir>assoc
 C:\Users\khoir>attrib
 A                    C:\Users\khoir\.bash_history
 A                    C:\Users\khoir\.gitconfig
+A                    C:\Users\khoir\Get-LastBootTime.ps1
 A   H   I            C:\Users\khoir\NTUSER.DAT
 A  SH                C:\Users\khoir\ntuser.dat.LOG1
 A  SH                C:\Users\khoir\ntuser.dat.LOG2
@@ -801,9 +804,6 @@ Commands (only one command permitted per execution)
   /clear           Clears the audit policy.
   /remove          Removes the per-user audit policy for a user account.
   /resourceSACL    Configure global resource SACLs
-
-
-Use AuditPol <command> /? for details on each command
 
 C:\Users\khoir>bcdboot
 
@@ -1160,11 +1160,13 @@ C:\Users\khoir>cipher
 U .bash_history
 U .gitconfig
 U .idlerc
+U .vscode
 U Contacts
 U Desktop
 U Documents
 U Downloads
 U Favorites
+U Get-LastBootTime.ps1
 U Links
 U Music
 U OneDrive
@@ -1202,18 +1204,21 @@ Examples:
   To delete RAS credentials:
      cmdkey /delete /ras
 
+C:\Users\khoir>compact
 
  Listing C:\Users\khoir\
  New files added to this directory will not be compressed.
 
-     1608 :      1608 = 1,0 to 1   .bash_history
+     7810 :      7810 = 1,0 to 1   .bash_history
        64 :        64 = 1,0 to 1   .gitconfig
         0 :         0 = 1,0 to 1   .idlerc
+        0 :         0 = 1,0 to 1   .vscode
         0 :         0 = 1,0 to 1   Contacts
         0 :         0 = 1,0 to 1   Desktop
         0 :         0 = 1,0 to 1   Documents
         0 :         0 = 1,0 to 1   Downloads
         0 :         0 = 1,0 to 1   Favorites
+      121 :       121 = 1,0 to 1   Get-LastBootTime.ps1
         0 :         0 = 1,0 to 1   Links
         0 :         0 = 1,0 to 1   Music
         0 :         0 = 1,0 to 1   OneDrive
@@ -1222,20 +1227,9 @@ Examples:
         0 :         0 = 1,0 to 1   Searches
         0 :         0 = 1,0 to 1   Videos
 
-Of 34 files within 1 directories
-0 are compressed and 34 are not compressed.
-4.839.068 total bytes of data are stored in 4.839.068 bytes.
-The compression ratio is 1,0 to 1.
-
-C:\Users\khoir>compact vdisk
-
- Listing C:\Users\khoir\
- New files added to this directory will not be compressed.
-
-
-Of 0 files within 1 directories
-0 are compressed and 0 are not compressed.
-0 total bytes of data are stored in 0 bytes.
+Of 37 files within 1 directories
+0 are compressed and 37 are not compressed.
+5.287.759 total bytes of data are stored in 5.287.759 bytes.
 The compression ratio is 1,0 to 1.
 
 C:\Users\khoir>defrag
@@ -1298,6 +1292,7 @@ Examples:
   Defrag C: /U /V
   Defrag C: D: /TierOptimize /MultiThread
   Defrag C:\mountpoint /Analyze /U
+  Defrag /C /H /V
 
 C:\Users\khoir>driverquery
 
@@ -1702,7 +1697,7 @@ WUDFWpdFs    WPD File System driver Kernel
 WUDFWpdMtp   WUDFWpdMtp             Kernel
 xboxgip      Xbox Game Input Protoc Kernel
 xinputhid    XINPUT HID Filter Driv Kernel
-MpKslbf97cb9 MpKslbf97cb98          Kernel
+MpKsl6009654 MpKsl60096547          Kernel
 
 C:\Users\khoir>finger
 
@@ -1718,42 +1713,8 @@ FINGER [-l] [user]@host [...]
   @host     Specifies the server on the remote system whose users you
             want information about.
 
-C:\Users\khoir>forfiles
-
-".bash_history"
-".gitconfig"
-".idlerc"
-"AppData"
-"Application Data"
-"Contacts"
-"Cookies"
-"Desktop"
-"Documents"
-"Downloads"
-"Favorites"
-"IntelGraphicsProfiles"
-"Links"
-"Local Settings"
-"Music"
-"My Documents"
-"NetHood"
-"NTUSER.DAT"
-"ntuser.dat.LOG1"
-"ntuser.dat.LOG2"
-"NTUSER.DAT{d2992b85-1514-11ed-8e10-e5eaa805d4a9}.TM.blf"
-"NTUSER.DAT{d2992b85-1514-11ed-8e10-e5eaa805d4a9}.TMContainer00000000000000000001.regtrans-ms"
-"NTUSER.DAT{d2992b85-1514-11ed-8e10-e5eaa805d4a9}.TMContainer00000000000000000002.regtrans-ms"
-"ntuser.ini"
-"OneDrive"
-"Pictures"
-"PrintHood"
-"Recent"
-"Saved Games"
-"Searches"
-"SendTo"
-"Start Menu"
-"Templates"
-"Videos"
+C:\Users\khoir>for files
+files was unexpected at this time.
 
 C:\Users\khoir>fsutil
 ---- Commands Supported ----
@@ -1927,18 +1888,13 @@ Wireless LAN adapter Local Area Connection* 1:
    Media State . . . . . . . . . . . : Media disconnected
    Connection-specific DNS Suffix  . :
 
-Wireless LAN adapter Local Area Connection* 2:
-
-   Media State . . . . . . . . . . . : Media disconnected
-   Connection-specific DNS Suffix  . :
-
 Wireless LAN adapter Wi-Fi:
 
    Connection-specific DNS Suffix  . :
    Link-local IPv6 Address . . . . . : fe80::d44a:139a:9496:408%6
-   IPv4 Address. . . . . . . . . . . : 192.168.113.227
+   IPv4 Address. . . . . . . . . . . : 192.168.90.227
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Default Gateway . . . . . . . . . : 192.168.113.226
+   Default Gateway . . . . . . . . . : 192.168.90.190
 
 Ethernet adapter Bluetooth Network Connection:
 
