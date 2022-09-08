@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
         table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 td, th {
-    background-color: #dddddd;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 </style>
-
-</head>
+    
+</head> 
 <body>
     <div>
         <h1> ini request </h1>
@@ -29,16 +35,16 @@ td, th {
             <button type="submit">kirim</button>
 
         </form>
-
+        
         <hr>
-        <h1> ini respons</h1>
+        <h1>ini respons</h1>
 
         <table>
             <tr>
                 <th>id</th>
                 <th>nama</th>
                 <th>actions</th>
-                <!--<th>detail</th-->
+                <!--<th>detail</th>-->
             </tr>
             {% for d in context %}
             <tr>
@@ -59,6 +65,7 @@ td, th {
             </tr>
             {% endfor %}
         </table>
+            
     </div>
-</body>
+ </body>
 </html>

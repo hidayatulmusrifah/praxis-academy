@@ -1,4 +1,4 @@
-from crypt import methods
+
 from flask import Flask, render_template, request, redirect
 import psycopg2
 app = Flask(__name__)
@@ -26,7 +26,7 @@ def index():
         # print(20*"=")
     
     print(request.method)
-    query = f"select * from buah order by id desc"
+    query = f"select * from buah"
     curs.execute(query)
     data = curs.fetchall()
     curs.close()
