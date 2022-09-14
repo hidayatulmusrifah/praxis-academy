@@ -10,7 +10,7 @@ def connect():
             host="localhost",
             database="suppliers",  
             user="postgres",
-            password="hda182526")
+            password="yasayatau18")
 
         cur = conn.cursor()
 
